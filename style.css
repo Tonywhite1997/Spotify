@@ -1,0 +1,379 @@
+*{
+    margin: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --header-background: black;
+    --header-color: white;
+    --body-background: rgb(41, 65, 171);
+    --body-color: #2fb661;
+    --main-color: #18eb66;
+    --main-para-color: #3ce87b; 
+    --footer-text: rgb(165, 164, 164);
+}
+.footer-headers{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: var(--header-color);
+}
+li{
+    list-style: none;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+.header{
+    background: var(--header-background);
+    color: var(--header-color);
+    height: 11vh;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+.fa-spotify{
+    font-size: 2.5rem;
+    color: var(--header-color);
+}
+.fa-bars{
+    display: none;
+}
+.spotify{
+    color: var(--header-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-items: center;
+    margin-left: .3em;
+}
+.list{
+    display: flex;
+    width: 50%;
+}
+.list-content{
+    display: flex;
+    align-items: center;
+}
+.list-content li{
+    padding: 1.1em;
+    font-weight: 600;
+}
+.list-content a:hover{
+    color: #2fb661;
+}
+.list-line{
+    font-weight:normal;
+}
+
+main{
+    background: var(--body-background);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+.main-content{
+    position: relative;
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+
+    color: var(--main-color);
+}
+.main-content h1{
+    font-size: 9rem; 
+    font-family: 'Oswald', sans-serif;
+    font-weight:bolder;
+}
+.listening{
+    margin-top: .8em;
+    margin-left: 30%;
+    width: 100%;
+}
+
+.millions{
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: .8em;
+    color:#23b458;
+}
+.everything{
+    margin-left: 10%;
+}
+.button{
+    text-align: center;
+    background: var(--main-color);
+    padding: .8em;
+    border-radius: 2em;
+    margin-top: 2em;
+    font-size: .9rem;
+}
+.button a{
+    color: var(--body-background);
+}
+.button:hover{
+    padding: .9em;
+}
+footer{
+    height: 75vh;
+    background: var(--header-background);
+    color: var(--header-color);
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-logo{
+    height: 10%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin-top: 5.5em;
+}
+.footer-logo .fa-spotify{
+    margin-left: 1em;
+}
+.grid-container{
+    width: 60%;
+    margin-top: 6.5em;
+
+}
+.grid-header-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-header, .grid-item{
+    margin-bottom: 1em;
+    padding: .5em;
+}
+.grid-item a:hover{
+    color: var(--main-color);
+}
+.grid-header{
+    font-size: .75rem;
+    font-weight: bold;
+    color: var(--footer-text);
+}
+.isolated{
+    grid-column: 2/3;
+}
+.investors{
+    margin-bottom: 1em;
+    padding: .5em;
+}
+.investors a:hover{
+    color: var(--main-color);
+}
+.social{
+    width: 20%;
+    margin-top: 6.5em;
+}
+.fa-instagram, .fa-twitter, .fa-facebook{
+    font-size: 2rem;
+    padding: .5em;
+    padding-top: .2em;
+    color: white;
+}
+.fa-instagram:hover, .fa-twitter:hover, .fa-facebook:hover{
+    color: var(--main-color);
+}
+.footer-last-contents{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4em;
+
+}
+.last-links-flex{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.last-links-flex li{
+    margin-right: 1em;
+    font-size: .7rem;
+}
+.last-links-flex a{
+    color: var(--footer-text);
+}
+.last-links-flex a:hover{
+    color: var(--main-color);
+}
+.nigeria{
+    font-size: .8rem;
+    color: var(--footer-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+    width: 20%;
+}
+.nigeria-content{
+    margin-bottom: 1em;
+}
+.nigeria-content a{
+    color: var(--footer-text);
+}
+.nigeria-content a:hover{
+    color: var(--main-color);
+}
+@media screen and /*(min-width:991px) and*/ (max-width:1200px) {
+    .list{
+        width: 60%;
+    }
+    .listening{
+        margin: 0;
+        margin-top: 1.5em;
+        text-align: center;
+    }
+    .everything{
+        margin: 0;
+    }
+    .main-content h1{
+        font-size: 6rem;
+    }
+    .footer-logo .fa-spotify{
+        margin-left: .2em;
+    }
+    .fa-instagram, .fa-twitter, .fa-facebook{
+        padding: .1em;
+    }
+    .fa-bars{
+        display: none;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .list{
+        display: none;
+    }
+    .header{
+        position: relative;
+    }
+    .fa-bars{
+        height: 100%;
+        display: flex;
+        position: absolute;
+        right: 4em;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .fa-bars{
+        right: .3em;
+    }
+    .grid-header{
+        display: none;
+    }
+    .main-content h1{
+        font-size: 4rem;
+    }
+    .main-content{
+        margin-top: 8em;
+    }
+  
+    .footer-headers{
+        display: flex;
+        font-size: .7rem;
+        padding-left: .5em;
+        margin-top: 3em;
+        color: var(--footer-text);
+    }
+   .investors{
+       margin: 0px;
+   }
+    .grid-item{
+        margin-bottom: .2em;
+    }
+    .grid-container{
+        width: 100%;
+    }
+    footer{
+        display: block;
+        height: 130vh;
+        
+    }
+    .footer{
+        display: block;
+        height: 90%;
+    }
+    .grid-header-container{
+        display: block;
+    }
+    .footer-last-contents{
+        margin: 0px;
+        margin-bottom: 1em;
+        padding-left: .5em;
+    }
+    .last-links-flex{
+        padding: 0;
+        padding-left: .5em;
+        
+    }
+    .social{
+        padding-left: .5em;
+        width: 100%;
+    }
+    .footer-logo{
+        padding: 0;
+        margin: 0;
+    }
+    .grid-container{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .main-content h1{
+        font-size: 3rem;
+    }
+    .main-content p{
+        width: 60%;
+        font-size: .9rem;
+    }
+    .nigeria{
+        width: 50%;
+    }
+    .last-links-flex{
+        width: 50%;
+        margin-left: .5em;
+    }
+}
+@media screen and (max-width:356px) {
+    .last-links-flex{
+        flex-direction: column;
+    }
+    .last-links-flex li{
+        margin-bottom:1em;
+    }
+    footer{
+        height: 150vh;
+    }
+    .footer{
+        height: 80%;
+    }
+    /* .social{
+        margin: 1em;
+    } */
+}
