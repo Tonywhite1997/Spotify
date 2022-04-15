@@ -35,7 +35,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="top-header" id="topHeader">
+      <i class="fas fa-bars" id="openNav"></i>
+      <!-- <i class="fas fa-window-close" id="closeNav"></i> -->
+    </header>
+    <nav class="header" id="navBar">
       <div class="logo">
         <a href=""><i class="fab fa-spotify"></i></a>
         <h3 class="spotify"><a href="">Spotify</a></h3>
@@ -49,9 +53,9 @@
           <li><a href="">Sign up</a></li>
           <li><a href="">Log in</a></li>
         </ul>
+        <i class="fas fa-window-close" id="closeNav"></i>
       </div>
-      <i class="fas fa-bars"></i>
-    </header>
+    </nav>
     <main>
       <div class="main-content">
         <h1 class="listening">Listening is</h1>
@@ -115,5 +119,11 @@
         </div>
       </div>
     </footer>
+
+
+
+
+
+    <script src="live.js"></script>
   </body>
 </html>
